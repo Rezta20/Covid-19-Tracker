@@ -5,7 +5,7 @@ import { fetchData } from "./api";
 import styles from "./App.module.css";
 
 class App extends React.Component {
-  state = { data: {} };
+  state = { data: {}, country: "" };
 
   async componentDidMount() {
     const fetchedData = await fetchData();
